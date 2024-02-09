@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="practice.js"></script>
+  </head>
+  <body>
+    <h1>JavaScript Classes</h1>
+    <p>Creating two car objects from a car class:</p>
+
+    <p id="demo-class"></p>
+
+    <h2>JavaScript Functions</h2>
+    <p>Functions can be used in expressions.</p>
+    <p id="demo-fxn"></p>
+
+    <script>
+      class Car {
+        constructor(name, year) {
+          this.name = name;
+          this.year = year;
+        }
+      }
+
+      const myCar1 = new Car("Ford", 2014);
+      const myCar2 = new Car("Audi", 2019);
+
+      document.getElementById("demo-class").innerHTML =
+        myCar1.name + " " + myCar2.name;
+
+      function myFunction(a, b) {
+        return a * b;
+      }
+      let x = myFunction(4, 3) * 2;
+      document.getElementById("demo-fxn").innerHTML = x;
+    </script>
+  </body>
+</html>
